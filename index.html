@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<main class="mainContainer">
+			<section class="leftContainer">
+				<img class="skambo" alt="Skambo" src="Untitled.png" />
+        <section class="divider">
+          <div class="topTitle">Seja Bim Vindo!</div>
+          <div>Accesse sua conta agora mesmo</div>  
+        </section>
+				<button class="leftBtn">ENTRAR</button>
+				<div class="lowerTitle">esqueci minha senha</div>
+			</section>
+			<section class="rightContainer">
+				<div class="title">
+					<div>Crie sua Conta</div>
+					<div class="subtitle">Preencha o formulário</div>
+				</div>
+				<form class="forms">
+					<section>
+						<input class="forminput" type="textbox" placeholder="Name" id="InputName" onblur="handleEmpty('InputName','Name')" />
+						<div id="Name" class="emptyAlert"></div>
+					</section>
+					<section>
+						<input class="forminput" type="textbox" placeholder="Email" id="InputEmail" onblur="handleEmpty('InputEmail','Email')" />
+						<div id="Email" class="emptyAlert"></div>
+					</section>
+					<section>
+						<input class="forminput" type="textbox" placeholder="Password" id="InputPass" onblur="handleEmpty('InputPass','Password')" />
+						<div id="Password" class="emptyAlert"></div>
+					</section>
+				</form>
+
+				<button class="signupBtn" onclick='submit()'>CADASTRAR</button>
+			</section>
+
+			<div id="toasts"></div>
+		</main>
+	</body>
+	<script src="./script.js"></script>
+</html>
